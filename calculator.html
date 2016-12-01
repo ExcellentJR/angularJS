@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="calculate">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./bower_components/angular/angular.min.js"></script>
+    <script src="./controllers.js"></script>
+</head>
+<body>
+<form ng-controller="calculateController" ng-submit="requestFunding()">
+    Starting:<input ng-change="computeNeeded()" ng-model="startingEstimate">
+    Recommendation:{{needed}}
+    <button>Fund my startup!</button>
+    <button ng-click="reset()">Reset</button>
+</form>
+</body>
+</html>
