@@ -1,0 +1,16 @@
+<!doctype html>
+<html ng-app="myapp">
+<head>
+    <meta charset="UTF-8">
+    <title>hello Word!</title>
+    <script src="./node_modules/angular/angular.min.js"></script>
+    <!--<script src="http://code.angularjs.org/angular-1.0.1.min.js"></script>-->
+    <script src="./controllers.js"></script>
+</head>
+<body>
+<div ng-controller="HelloController">
+    <input ng-model="greeting.text">
+    <p>{{greeting.text || 'Hello'}},World!</p>
+</div>
+</body>
+</html>
